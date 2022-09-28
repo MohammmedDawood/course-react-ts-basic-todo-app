@@ -8,11 +8,7 @@ const Todos: FC<{ items: Todo[] }> = (props) => {
   return (
     <ul className={classes.todos}>
       {props.items.map((item) => {
-        return (
-          <>
-            <TodoItem key={item.id} text={item.text} />
-          </>
-        );
+        return <TodoItem key={item.id} text={item.text} />;
       })}
     </ul>
   );
